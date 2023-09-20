@@ -1,2 +1,1 @@
-console.log("hi");
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsIm1hcHBpbmdzIjoiQUFBQUEsUUFBUUMsSUFBSSIsInNvdXJjZXMiOlsid2VicGFjazovL3Jlc3RhdXJhbnQtcGFnZS8uL3NyYy9pbmRleC5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zb2xlLmxvZyhcImhpXCIpO1xuIl0sIm5hbWVzIjpbImNvbnNvbGUiLCJsb2ciXSwic291cmNlUm9vdCI6IiJ9
+(()=>{"use strict";!function(){const e=document.createElement("div"),t=document.createElement("div");t.textContent="mcDonuts",e.appendChild(t),document.body.appendChild(e)}()})();

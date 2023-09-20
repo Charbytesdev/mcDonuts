@@ -1,1 +1,2 @@
-console.log("hi");
+import createHomePage from "./home-page";
+createHomePage();
