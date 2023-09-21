@@ -6,16 +6,24 @@
   box-sizing: border-box;
 }
 
-.nav-bar {
+body {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../bg-image.jpg");
+}
+
+.nav-bar {
+  display: grid;
+  grid-template: 1fr /1fr 1fr 1fr;
+  padding: 1rem;
+  backdrop-filter: blur(3px);
 }
 
 .nav-btn-container {
   display: flex;
   gap: 6rem;
+  place-self: center;
 }
 
 .nav-btn {
