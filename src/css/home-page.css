@@ -1,0 +1,25 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.hero-text {
+  font-size: 4rem;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(135, 62, 244, 1) 0%,
+    rgba(227, 28, 28, 1) 100%
+  );
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,17 @@
+.nav-bar {
+  display: grid;
+  grid-template: 1fr /1fr 1fr 1fr;
+  padding: 1rem;
+  backdrop-filter: blur(3px);
+}
+
+.restaurant-name {
+  color: blue;
+  font-size: 3rem;
+}
+
+.nav-btn-container {
+  display: flex;
+  gap: 6rem;
+  place-self: center;
+}
