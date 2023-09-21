@@ -1,6 +1,11 @@
 import "./css/global.css";
 import createHomePage from "./home-page";
 import createNavBar from "./nav-bar";
-
-document.body.appendChild(createNavBar());
-document.body.appendChild(createHomePage());
+const nav = createNavBar();
+const homePage = createHomePage();
+const navButtons = nav.childNodes[1];
+const homeButton = navButtons.childNodes[0];
+const menuButton = navButtons.childNodes[1];
+const aboutButton = navButtons.childNodes[2];
+document.body.appendChild(nav);
+document.body.appendChild(homePage);

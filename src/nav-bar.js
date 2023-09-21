@@ -22,10 +22,11 @@ export default function () {
   menuButton.textContent = "MENU";
   aboutButton.textContent = "ABOUT";
 
-  nav.appendChild(restaurantName);
   navButtonContainer.appendChild(homeButton);
   navButtonContainer.appendChild(menuButton);
   navButtonContainer.appendChild(aboutButton);
+
+  nav.appendChild(restaurantName);
   nav.appendChild(navButtonContainer);
   return nav;
 }
