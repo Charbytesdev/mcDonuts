@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
@@ -12,6 +12,30 @@ module.exports = {
       title: "Restaurant Page",
     }),
   ],
+  optimization: {
+    minimizer: [
+      "...",
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminMinify,
+          options: {
+            plugins: [
+              ["pngquant", { quality: [0.2, 0.2] }],
+              ["mozjpeg", { quality: 20, progressive: true }],
+              ["gifsicle", { interlaced: true, optimizationLevel: 3 }],
+              [
+                "svgo",
+                {
+                  plugins: [{ removeViewBox: false }],
+                },
+              ],
+            ],
+          },
+        },
+      }),
+    ],
+  },
+
   module: {
     rules: [
       {
