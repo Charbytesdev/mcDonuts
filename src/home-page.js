@@ -1,12 +1,12 @@
 import "./css/home-page.css";
 const homePage = (() => {
   const create = () => {
-    const pageContainer = document.createElement("div");
+    let pageContainer = document.createElement("div");
 
-    const hero = document.createElement("div");
+    let hero = document.createElement("div");
 
-    const heroText = document.createElement("div");
-    const heroButton = document.createElement("button");
+    let heroText = document.createElement("div");
+    let heroButton = document.createElement("button");
 
     pageContainer.classList.add("home-page");
 

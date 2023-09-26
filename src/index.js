@@ -7,22 +7,37 @@ import navBar from "./nav-bar";
 // const menuButton = navButtons.childNodes[1];
 // const aboutButton = navButtons.childNodes[2];
 
-const body = (() => {
-  const create = () => {
-    bodyDisplay.append(bodyDisplay.createPage(navBar));
-    bodyDisplay.append(bodyDisplay.createPage(homePage));
-  };
-  return { create };
-})();
-
 const bodyDisplay = (() => {
-  const createPage = (page) => {
-    return page.create();
-  };
-  const append = (element) => {
-    document.body.appendChild(element);
-  };
-  return { createPage, append };
-})();
+  let _currentPage;
+  let _pageList = [];
 
-body.create();
+  const setCurrentPage = (currentPage) => {
+    _currentPage = currentPage;
+  };
+
+  const append = (...nodes) => {
+    nodes.forEach((node) => {
+      document.body.append(node);
+    });
+  };
+
+  const createPages = (...pages) => {
+    pages.forEach((page) => _pageList.push(page.create()));
+  };
+
+  const swapToPage = (page) => {
+    _currentPage.style.display = "none";
+    let pageNode = page.create();
+    setCurrentPage(pageNode);
+    append(pageNode);
+  };
+
+  const _initialize = (() => {
+    append(navBar.create());
+    createPages(homePage);
+    setCurrentPage(_pageList[0]);
+    swapToPage(homePage);
+  })();
+
+  return { append, swapToPage };
+})();

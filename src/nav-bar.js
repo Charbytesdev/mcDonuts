@@ -1,14 +1,16 @@
 import "./css/nav-bar.css";
 
+const BUTTON_NAMES = ["HOME", "MENU", "ABOUT"];
+
 const navBar = (() => {
   const create = () => {
-    const nav = document.createElement("nav");
+    let nav = document.createElement("nav");
 
-    const restaurantName = document.createElement("h1");
-    const navButtonContainer = document.createElement("div");
-    const homeButton = document.createElement("button");
-    const menuButton = document.createElement("button");
-    const aboutButton = document.createElement("button");
+    let restaurantName = document.createElement("h1");
+    let navButtonContainer = document.createElement("div");
+    let homeButton = document.createElement("button");
+    let menuButton = document.createElement("button");
+    let aboutButton = document.createElement("button");
 
     nav.classList.add("nav-bar");
 
@@ -19,16 +21,12 @@ const navBar = (() => {
     aboutButton.classList.add("about-btn", "nav-btn", "btn");
 
     restaurantName.textContent = "mcDonuts";
-    homeButton.textContent = "HOME";
-    menuButton.textContent = "MENU";
-    aboutButton.textContent = "ABOUT";
+    [homeButton.textContent, menuButton.textContent, aboutButton.textContent] =
+      BUTTON_NAMES;
 
-    navButtonContainer.appendChild(homeButton);
-    navButtonContainer.appendChild(menuButton);
-    navButtonContainer.appendChild(aboutButton);
+    navButtonContainer.append(homeButton, menuButton, aboutButton);
 
-    nav.appendChild(restaurantName);
-    nav.appendChild(navButtonContainer);
+    nav.append(restaurantName, navButtonContainer);
     return nav;
   };
 
