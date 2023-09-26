@@ -3,7 +3,8 @@
   grid-template: 1fr /1fr 1fr 1fr;
   padding: 1rem;
   backdrop-filter: blur(3px);
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 2;
 }
 
