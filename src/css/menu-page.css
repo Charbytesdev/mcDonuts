@@ -7,16 +7,44 @@
 }
 
 .menu-header {
-  font-size: 5rem;
+  font-size: 7rem;
   text-align: center;
   grid-column: 1/-1;
 }
 
 .menu {
+  padding: 1.5rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
   display: grid;
-  grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
-  place-items: center;
+  grid-auto-flow: column;
+  grid-template: repeat(9, fit-content(8ch)) / repeat(2, 1fr);
   width: 60vw;
-  height: 80vh;
-  background-color: #00000060;
+  place-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(135, 62, 244, 0.4) 0%,
+    rgba(227, 28, 28, 0.4) 100%
+  );
+  gap: 1.5rem;
+}
+
+.image {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.image-label {
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(30, 243, 154) 0%,
+    rgb(255, 255, 255) 70%,
+    rgb(250, 249, 172) 100%
+  );
+  font-size: 3rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
