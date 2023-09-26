@@ -10,6 +10,9 @@ const body = (() => {
 
   const setCurrentPage = (currentPage) => {
     _currentPage = currentPage;
+  };
+
+  const displayCurrentPage = () => {
     _currentPage.style.display = "flex";
   };
 
@@ -22,7 +25,12 @@ const body = (() => {
   };
 
   const createPages = (...pages) => {
-    pages.forEach((page) => _pageList.push(page.create()));
+    pages.forEach((page) => {
+      let pageNode = createNode(page);
+      pageNode.style.display = "none";
+      document.body.append(pageNode);
+      _pageList.push(pageNode);
+    });
   };
 
   const swapToPage = (page) => {
@@ -30,8 +38,8 @@ const body = (() => {
       if (_currentPage) {
         _currentPage.style.display = "none";
       }
-      append(page);
       setCurrentPage(page);
+      displayCurrentPage();
     }
   };
 
