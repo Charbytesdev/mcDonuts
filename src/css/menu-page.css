@@ -1,0 +1,22 @@
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.menu-header {
+  font-size: 5rem;
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+.menu {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
+  place-items: center;
+  width: 60vw;
+  height: 80vh;
+  background-color: #00000060;
+}
