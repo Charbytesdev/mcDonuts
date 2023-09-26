@@ -2,11 +2,7 @@ import "./css/global.css";
 import navBar from "./nav-bar";
 import homePage from "./home-page";
 import menuPage from "./menu-page";
-
-// const navButtons = nav.childNodes[1];
-// const homeButton = navButtons.childNodes[0];
-// const menuButton = navButtons.childNodes[1];
-// const aboutButton = navButtons.childNodes[2];
+import aboutPage from "./about-page";
 
 const body = (() => {
   let _currentPage;
@@ -17,7 +13,7 @@ const body = (() => {
     _currentPage.style.display = "flex";
   };
 
-  const create = (node) => node.create();
+  const createNode = (node) => node.create();
 
   const append = (...nodes) => {
     nodes.forEach((node) => {
@@ -49,11 +45,14 @@ const body = (() => {
     );
   };
 
-  const initialize = (() => {
-    let navBarNode = create(navBar);
+  const create = () => {
+    let navBarNode = createNode(navBar);
     append(navBarNode);
     initializeButtons(navBarNode);
-    createPages(homePage, menuPage);
+    createPages(homePage, menuPage, aboutPage);
     swapToPage(_pageList[0]);
-  })();
+  };
+  return { create };
 })();
+
+body.create();
