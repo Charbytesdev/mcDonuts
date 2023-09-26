@@ -1,6 +1,7 @@
 import "./css/global.css";
-import homePage from "./home-page";
 import navBar from "./nav-bar";
+import homePage from "./home-page";
+import menuPage from "./menu-page";
 
 // const navButtons = nav.childNodes[1];
 // const homeButton = navButtons.childNodes[0];
@@ -13,6 +14,7 @@ const body = (() => {
 
   const setCurrentPage = (currentPage) => {
     _currentPage = currentPage;
+    _currentPage.style.display = "flex";
   };
 
   const create = (node) => node.create();
@@ -28,11 +30,13 @@ const body = (() => {
   };
 
   const swapToPage = (page) => {
-    if (_currentPage != page && _currentPage) {
-      _currentPage.style.display = "none";
+    if (_currentPage != page) {
+      if (_currentPage) {
+        _currentPage.style.display = "none";
+      }
+      append(page);
+      setCurrentPage(page);
     }
-    append(page);
-    setCurrentPage(page);
   };
 
   const initializeButtons = (navBar) => {
@@ -49,7 +53,7 @@ const body = (() => {
     let navBarNode = create(navBar);
     append(navBarNode);
     initializeButtons(navBarNode);
-    createPages(homePage);
+    createPages(homePage, menuPage);
     swapToPage(_pageList[0]);
   })();
 })();
