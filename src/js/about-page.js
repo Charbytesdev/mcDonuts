@@ -1,4 +1,4 @@
-import "./css/about-page.css";
+import "../css/about-page.css";
 const aboutPage = (() => {
   const create = () => {
     let pageContainer = document.createElement("div");

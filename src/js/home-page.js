@@ -1,4 +1,4 @@
-import "./css/home-page.css";
+import "../css/home-page.css";
 const homePage = (() => {
   const create = () => {
     let pageContainer = document.createElement("div");

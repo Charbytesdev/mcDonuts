@@ -1,5 +1,5 @@
-import "./css/nav-bar.css";
-import iconSrc from "./donut.png";
+import "../css/nav-bar.css";
+import iconSrc from "../img/donut.png";
 
 const BUTTON_NAMES = ["HOME", "MENU", "ABOUT"];
 

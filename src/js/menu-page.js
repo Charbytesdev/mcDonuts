@@ -1,12 +1,12 @@
-import "./css/menu-page.css";
-import bpSource from "./blue-paradise.jpeg";
-import bdSource from "./blueberry-dance.jpeg";
-import crSource from "./choco-rainbow.jpeg";
-import dsSource from "./dark-side.jpeg";
-import ioSource from "./icy-oreo.jpeg";
-import mdSource from "./milky-donut.jpeg";
-import wnSource from "./waffonut.jpeg";
-import scSource from "./snowy-christmas.jpeg";
+import "../css/menu-page.css";
+import bpSource from "../img/blue-paradise.jpeg";
+import bdSource from "../img/blueberry-dance.jpeg";
+import crSource from "../img/choco-rainbow.jpeg";
+import dsSource from "../img/dark-side.jpeg";
+import ioSource from "../img/icy-oreo.jpeg";
+import mdSource from "../img/milky-donut.jpeg";
+import wnSource from "../img/waffonut.jpeg";
+import scSource from "../img/snowy-christmas.jpeg";
 
 const menuPage = (() => {
   let _menu = document.createElement("div");

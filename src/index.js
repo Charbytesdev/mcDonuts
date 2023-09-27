@@ -1,8 +1,8 @@
 import "./css/global.css";
-import navBar from "./nav-bar";
-import homePage from "./home-page";
-import menuPage from "./menu-page";
-import aboutPage from "./about-page";
+import navBar from "./js/nav-bar";
+import homePage from "./js/home-page";
+import menuPage from "./js/menu-page";
+import aboutPage from "./js/about-page";
 
 const body = (() => {
   let _currentPage;
