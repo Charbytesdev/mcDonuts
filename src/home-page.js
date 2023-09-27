@@ -17,8 +17,7 @@ const homePage = (() => {
     heroText.textContent = "Hungry for McDonuts?";
     heroButton.textContent = "View Menu";
 
-    hero.appendChild(heroText);
-    hero.appendChild(heroButton);
+    hero.append(heroText, heroButton);
 
     pageContainer.appendChild(hero);
     return pageContainer;

@@ -43,6 +43,13 @@ const body = (() => {
     }
   };
 
+  const initializeHomePageMenuButton = () => {
+    const viewMenuButton = _pageList[0].children[0].children[1];
+    viewMenuButton.onclick = () => {
+      swapToPage(_pageList[1]);
+    };
+  };
+
   const initializeButtons = (navBar) => {
     let navButtons = [...navBar.children[1].children];
     navButtons.forEach(
@@ -58,6 +65,7 @@ const body = (() => {
     append(navBarNode);
     initializeButtons(navBarNode);
     createPages(homePage, menuPage, aboutPage);
+    initializeHomePageMenuButton();
     swapToPage(_pageList[0]);
   };
   return { create };
