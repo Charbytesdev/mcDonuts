@@ -6,20 +6,8 @@
   margin-top: 3rem;
 }
 
-.menu-header {
-  font-size: 7rem;
-  text-align: center;
-  grid-column: 1/-1;
-  background: linear-gradient(
-    90deg,
-    rgb(135, 224, 135) 0%,
-    rgb(28, 204, 227) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .menu {
+  font-family: "Dancing Script", Arial, Helvetica, sans-serif;
   padding: 1.5rem;
   border-radius: 30px;
   margin-bottom: 2rem;

@@ -24,13 +24,26 @@
 }
 
 .hero-text,
-.menu-header {
+.menu-header,
+.about-header {
   font-family: "Lobster", Arial, Helvetica, sans-serif;
 }
 
-.menu {
-  font-family: "Dancing Script", Arial, Helvetica, sans-serif;
+.menu-header,
+.about-header {
+  font-size: 7rem;
+  text-align: center;
+  grid-column: 1/-1;
+  background: linear-gradient(
+    90deg,
+    rgb(135, 224, 135) 0%,
+    rgb(28, 204, 227) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+
 
 :root {
   --neon-red: #ff3131;

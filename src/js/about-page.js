@@ -8,9 +8,9 @@ const aboutPage = (() => {
     let aboutText = document.createElement("div");
 
     pageContainer.classList.add("about-page");
-    aboutText.classList.add("about-text", "btn");
-
-    aboutText.textContent = "About";
+    aboutText.classList.add("about-header");
+    about.classList.add("about-container");
+    aboutText.textContent = "ABOUT US";
 
     about.appendChild(aboutText);
 
