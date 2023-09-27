@@ -32,10 +32,6 @@
   font-family: "Dancing Script", Arial, Helvetica, sans-serif;
 }
 
-.btn {
-  font-family: "Lilita One";
-}
-
 :root {
   --neon-red: #ff3131;
   --neon-blue: #1b03a3;
@@ -59,6 +55,7 @@ body {
 }
 
 .btn {
+  font-family: "Lilita One";
   font-size: 2rem;
   font-weight: 800;
   background-color: rgba(135, 62, 244, 1);

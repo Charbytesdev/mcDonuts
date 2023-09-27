@@ -13,7 +13,7 @@
 }
 
 .hero-text {
-  font-size: 4rem;
+  font-size: 6rem;
   background: -webkit-linear-gradient(
     90deg,
     rgba(135, 62, 244, 1) 0%,
@@ -23,4 +23,9 @@
   -webkit-text-stroke-color: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hero-btn {
+  cursor: pointer;
+  font-size: 3.5rem;
 }
