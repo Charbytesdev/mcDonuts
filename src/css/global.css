@@ -6,9 +6,34 @@
   src: url("../assets/fonts/lobster-v30-latin-regular.woff2") format("woff2");
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/dancing-script-v25-latin-regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/lilita-one-v15-latin-regular.woff2") format("woff2");
+}
+
 .hero-text,
 .menu-header {
   font-family: "Lobster", Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  font-family: "Dancing Script", Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  font-family: "Lilita One";
 }
 
 :root {

@@ -10,6 +10,13 @@
   font-size: 7rem;
   text-align: center;
   grid-column: 1/-1;
+  background: linear-gradient(
+    90deg,
+    rgb(135, 224, 135) 0%,
+    rgb(28, 204, 227) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu {
