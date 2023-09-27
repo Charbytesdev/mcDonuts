@@ -9,7 +9,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Restaurant Page",
+      title: "McDonuts",
+      favicon: "./src/img/donut.png",
     }),
   ],
   optimization: {
