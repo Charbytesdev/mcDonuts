@@ -1,3 +1,16 @@
+@font-face {
+  font-display: swap;
+  font-family: "Lobster";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/lobster-v30-latin-regular.woff2") format("woff2");
+}
+
+.hero-text,
+.menu-header {
+  font-family: "Lobster", Arial, Helvetica, sans-serif;
+}
+
 :root {
   --neon-red: #ff3131;
   --neon-blue: #1b03a3;
