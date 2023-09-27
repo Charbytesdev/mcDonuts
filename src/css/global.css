@@ -43,7 +43,20 @@
   -webkit-text-fill-color: transparent;
 }
 
+.menu,
+.about-container {
+  padding: 1.5rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
 
+  width: 60vw;
+  background: linear-gradient(
+    90deg,
+    rgba(135, 62, 244, 0.4) 0%,
+    rgba(227, 28, 28, 0.4) 100%
+  );
+  gap: 1.5rem;
+}
 
 :root {
   --neon-red: #ff3131;

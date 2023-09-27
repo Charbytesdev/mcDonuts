@@ -7,22 +7,13 @@
 }
 
 .about-container {
-  padding: 1.5rem;
-  border-radius: 30px;
-  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  width: 60vw;
   align-items: center;
-  background: linear-gradient(
-    90deg,
-    rgba(135, 62, 244, 0.4) 0%,
-    rgba(227, 28, 28, 0.4) 100%
-  );
 }
 
 .about-text {
   font-family: "Lilita One";
   color: var(--btn-text-color);
-  font-size: 2rem;
+  font-size: 1.9rem;
 }

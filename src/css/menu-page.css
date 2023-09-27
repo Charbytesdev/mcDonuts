@@ -8,20 +8,10 @@
 
 .menu {
   font-family: "Dancing Script", Arial, Helvetica, sans-serif;
-  padding: 1.5rem;
-  border-radius: 30px;
-  margin-bottom: 2rem;
   display: grid;
   grid-auto-flow: column;
   grid-template: repeat(9, fit-content(8ch)) / repeat(2, 1fr);
-  width: 60vw;
   place-items: center;
-  background: linear-gradient(
-    90deg,
-    rgba(135, 62, 244, 0.4) 0%,
-    rgba(227, 28, 28, 0.4) 100%
-  );
-  gap: 1.5rem;
 }
 
 .image {
